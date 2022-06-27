@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secert</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/599ba5a688.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header -->
+   <!-- header -->
+   <header>
+
+    
+    <a href=""><img src="assets/css/img/rsz_11rsz_secret1-removebg-preview.png" class="logo" alt=""></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html" >Trang chủ</a></li>
+            <li><a href="shop.html" class="actives">Shop</a>
+            <ul class="sub-menu">
+                <li><a href="">Hàng mới về</a></li>
+                <li><a href="">Collection</a></li>
+                <li><a href="">Áo</a>
+                    <ul>
+                        <li><a href="">Áo sơ mi</a></li>
+                        <li><a href="">Áo thun</a></li>
+                        <li><a href="">Áo vest</a></li>
+                        <li><a href="">Áo khoác</a></li>
+                        <li><a href="">Áo len</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="">Quần</a>
+                    <ul>
+                        <li><a href="">Quần jean</a></li>
+                        <li><a href="">Quần lửng</a></li>
+                        <li><a href="">Quần dài</a></li>
+                        
+                    </ul>
+                
+                </li>
+
+            </ul>                      
+        </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="contact.html">Liên lạc</a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+       <div class="others">
+        <li><input placeholder="Tìm kiếm" type="text" id="search-item" onkeyup="search()"><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><a class="fa fa-user" href="login.html"></a></li>
+        <li id="lg-bag"><i class="fa fa-shopping-bag" href=""></i></li>
+       
+       </div>
+    <div id="mobie">
+        <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+        <i id="bar" class="fa-solid fa-outdent"></i>
+     
+    </div>
+    <section id="cart" class="section-p1">
+        <i class="fa-solid fa-x"></i>
+        <table width="100%">
+            <thead>
+                <tr>
+                   
+                    <td>Ảnh</td>
+                    <td>Sản phẩm</td>
+                    <td>Giá</td>
+                    <td>Số lượng</td>
+                    <td>Xóa</td>
+                </tr>
+            </thead>
+            <tbody class="bodytable">
+                <!-- <tr> 
+                   
+                    <td><img src="assets/css/img/products/aokieuden.jpg" alt=""></td>
+                    <td>Áo kiểu</td>
+                    <td><span>100.000</span>đ</td>
+                    <td><input type="number" value="1" min="1" ></td> 
+                    <td> <i class="far fa-times-circle" style="cursor:pointer ;"></i> </td>
+                 </tr> -->
+                <!-- <tr> 
+                    <td></td>
+                    <td><img src="assets/css/img/products/vayden.jpg" alt=""></td>
+                    <td>Váy đen</td>
+                    <td><span>100.000</span>đ</td>
+                    <td><input type="number" value="1" min="1" ></td>
+                    <td> <i class="far fa-times-circle" style="cursor:pointer ;"></i> </td>
+               </tr>  -->
+            </tbody>
+            
+        </table>
+       <div class="price-total" style="text-align:right ;">
+        <p style="font-weight:bold ; color: black;">Tổng tiền: <span>0</span>đ</p>
+       </div>
+      <button class="normal">Mua hàng</button>
+      
+    </section>
+</header>
+    
+ <!-- category -->
+ <section class="cartegory">
+    <div class="container-cartegory">
+       <div class="cartegory-top row"> 
+           <p>Trang chủ</p> <span>&#8594;</span> <p>Sản phẩm</p>  <span>&#8594;</span> <p>Hàng mới về</p>
+       
+
+       </div>
+       
+    </div>
+    <div class="container-cartegory">
+       <div class="row">
+           <div class="cartegory-left">
+              <ul>
+               <li class="cartegory-left-li"><a href="#">HÀNG MỚI VỀ</a>
+                 <ul>
+                   <li><a href="">BEYOND TRENDY</a></li>
+                   <li><a href="">JEAN FOR JOY</a></li>
+                   <li><a href="">LE JARDIN FLEURI</a></li>
+                   <li><a href="">FLOURISH18</a></li>
+                 </ul>
+               </li>
+               <li class="cartegory-left-li"><a href="#">ÁO</a>
+                   <ul>
+                       <li><a href="">SƠ MI</a></li>
+                       <li><a href="">ÁO THUN</a></li>
+                       <li><a href="">BLAZE</a></li>
+                       <li><a href="">ÁO KHOÁC</a></li>
+                     </ul>
+               </li>
+               <li class="cartegory-left-li"><a href="#">COLLECTION</a>
+                   <ul>
+                       <li><a href="">ÁO PHÔNG</a></li>
+                       <li><a href="">ĐỒ THU ĐÔNG</a></li>
+                       <li><a href="">BLAZE</a></li>
+                       <li><a href="">SUMMER</a></li>
+                     </ul>
+               </li>
+               <li class="cartegory-left-li"><a href="#">QUẦN</a>
+                   <ul>
+                       <li><a href="">ÁO PHÔNG</a></li>
+                       <li><a href="">ĐỒ THU ĐÔNG</a></li>
+                       <li><a href="">BLAZE</a></li>
+                       <li><a href="">SUMMER</a></li>
+                     </ul>
+               </li>
+              </ul>
+           </div>
+         <div class="cartegory-right row">
+           <div class="cartegory-right-top-item">
+               <p>HÀNG MỚI VỀ</p>
+           </div>
+           <div class="cartegory-right-top-item">
+               <button><span>Bộ lọc</span><i class="fas fa-sort-down"></i>
+            </button>
+           </div>
+           <div class="cartegory-right-top-item">
+               <select name="" id="sort">
+                   <option value="default">Sắp xếp</option>
+                   <option value="max">Giá cao đến thấp</option>
+                   <option value="min">Giấ thấp đến cao</option>
+
+               </select>
+           </div>
+           <div class="cartegory-right-content row section-p1" id="product-list">
+               <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="assets/css/img/products/3555.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Áo kiểu</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>100.000</span>đ</h4>
+                      
+                   </div>
+                    <button class="fa-solid fa-cart-plus cart"></button>
+               </div>
+               <div class="pro">
+                <img src="assets/css/img/products/2015.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Sơ mi</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>150.000</span>đ</h4>
+                   </div>
+                    <button class="fa-solid fa-cart-plus cart"></button>
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/2023.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Blaze</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>300.000</span>đ</h4>
+                   </div>
+                  
+                    <button class="fa-solid fa-cart-plus cart"></button>
+                 
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/527.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Áo croptop</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>100.000</span>đ</h4>
+                   </div>
+                    <button class="fa-solid fa-cart-plus cart"></button>
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/6037.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Đồ thể thao</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>200.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/65127.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Váy thể thao</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>300.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/71282.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Quần bò lửng</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>100.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/8808.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Yếm quần</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>250.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/P22286.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Bra</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>150.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/2008.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Sơ mi</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>100.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/3555.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Áo phông</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>220.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/527.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Áo croptop</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>170.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/A60.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Áo thắt nơ</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>160.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/5305.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Chân váy dài</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>220.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/961.gif" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Áo xẻ tà</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>150.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+               <div class="pro">
+                   <img src="assets/css/img/products/223-3_05.jpg" alt="">
+                   <div class="des">
+                    <h6>Scret</h6>
+                       <h5>Quần baggy</h5>
+                       <div class="star">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                       </div>
+                       <h4><span>230.000</span>đ</h4>
+                   </div>
+                   <button class="fa-solid fa-cart-plus cart"></button>
+
+               </div>
+           </div>
+           <div class="cartegory-right-bottom row">
+               <div class="cartegory-right-bottom-item">
+                   <p>Hiện thị <b>2</b> <span>|</span>4 sản phẩm</p>
+               </div>
+               <div class="cartegory-right-bottom-item">
+                   <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                  <a href="#">1</a>
+                 <a href="#">2</a>
+                 <a href="#">3</a>
+                 <a href="#">4</a>
+                 <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+               </div>
+
+           </div>
+             </div>
+           </div>
+         </div>
+         
+       
+    </div>
+</section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="assets/css/img/rsz_11rsz_secret1-removebg-preview.png" alt="">
+            <h4>Liên lạc</h4>
+            <p><Strong>Địa chỉ: </Strong>247-Trần Đại Nghĩa-Ngũ Hành Sơn-Đà Nẵng</p>
+            <p><Strong>Địa thoại:</Strong>0363 568 734</p>
+            <p><Strong>Open:</Strong>08:00 - 21:00, Hàng ngày</p>
+            <div class="follow">
+                <h4>Shop</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <h4>Secret</h4>
+                <a href="">Đặc biệt</a>
+                <a href="">Đẹp-độc</a>
+                <a href="">Mua không nhìn giá</a>
+            </div>
+            <div class="col">
+                <h4>Tài khoản</h4>
+                <a href="">Đăng nhập</a>
+                <a href="">Giỏ hàng</a>
+                <a href="">Giúp đỡ</a>
+            </div>
+        <div class="col install">
+        <h4>Download App</h4>
+        <p>Từ Google Play hoặc App Store</p>
+        <div class="row">
+            <img src="assets/css/img/pay/app.jpg" alt="">
+            <img src="assets/css/img/pay/play.jpg" alt="">
+        </div>
+        <p>Thanh toán</p>
+        <img src="assets/css/img/pay/pay.png" alt="">
+    </div>
+
+    </footer>
+
+    <script src="js/category.js"></script>
+    <script>
+         AOS.init();
+    </script>
+
+</body>
+</html>

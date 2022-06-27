@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secert</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/599ba5a688.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root{
+  --color:#221F20;
+}
+
+.heading{
+  margin:2rem;
+  padding-top: 6rem;
+  display: inline-block;
+  font-size: 3.5rem;
+  color:var(--color);
+  position: relative;
+  letter-spacing: .2rem;
+}
+
+.heading::before, .heading::after{
+  content: '';
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top:.4rem solid var(--color);
+  border-left:.4rem solid var(--color);
+}
+
+.heading::before{
+  top:5.8rem; left: -2rem;
+}
+
+.heading::after{
+  bottom:-.5rem; right: -2rem;
+  transform: rotate(180deg);
+}
+
+
+</style>
+<body>
+    <!-- header -->
+    <header>
+
+    
+      <a href=""><img src="assets/css/img/rsz_11rsz_secret1-removebg-preview.png" class="logo" alt=""></a>
+      <div>
+          <ul id="navbar">
+              <li><a href="index.html" >Trang chủ</a></li>
+              <li><a href="shop.html" >Shop</a>
+              <ul class="sub-menu">
+                  <li><a href="">Hàng mới về</a></li>
+                  <li><a href="">Collection</a></li>
+                  <li><a href="">Áo</a>
+                      <ul>
+                          <li><a href="">Áo sơ mi</a></li>
+                          <li><a href="">Áo thun</a></li>
+                          <li><a href="">Áo vest</a></li>
+                          <li><a href="">Áo khoác</a></li>
+                          <li><a href="">Áo len</a></li>
+                      </ul>
+                  
+                  </li>
+                  <li><a href="">Quần</a>
+                      <ul>
+                          <li><a href="">Quần jean</a></li>
+                          <li><a href="">Quần lửng</a></li>
+                          <li><a href="">Quần dài</a></li>
+                          
+                      </ul>
+                  
+                  </li>
+  
+              </ul>                      
+          </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html" class="actives">Về chúng tôi</a></li>
+              <li><a href="contact.html">Liên lạc</a></li>
+              <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+          </ul>
+      </div>
+         <div class="others">
+          <li><input placeholder="Tìm kiếm" type="text" id="search-item" onkeyup="search()"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><a class="fa fa-user" href="login.html"></a></li>
+          <li id="lg-bag"><i class="fa fa-shopping-bag" href=""></i></li>
+         
+         </div>
+      <div id="mobie">
+          <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+          <i id="bar" class="fa-solid fa-outdent"></i>
+       
+      </div>
+      <section id="cart" class="section-p1">
+          <i class="fa-solid fa-x"></i>
+          <table width="100%">
+              <thead>
+                  <tr>
+                     
+                      <td>Ảnh</td>
+                      <td>Sản phẩm</td>
+                      <td>Giá</td>
+                      <td>Số lượng</td>
+                      <td>Xóa</td>
+                  </tr>
+              </thead>
+              <tbody class="bodytable">
+                  <tr>
+                      <!-- 
+                      <td><img src="assets/css/img/products/aokieuden.jpg" alt=""></td>
+                      <td>Áo kiểu</td>
+                      <td><span>100.000</span>đ</td>
+                      <td><input type="number" value="1" min="1" ></td> 
+                  <td><a href="#"><i class="far fa-times-circle"></i></a></td>-->
+                  </tr>
+                  <tr>
+                      <!-- <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                      <td><img src="assets/css/img/products/vayden.jpg" alt=""></td>
+                      <td>Váy đen</td>
+                      <td><span>100.000</span>đ</td>
+                      <td><input type="number" value="1" min="1" ></td> -->
+                  </tr>
+              </tbody>
+          </table>
+        <button class="normal">Mua hàng</button>
+      </section>
+  </header>
+    <section id="hero" class="about-header">
+        <h2>#Về chúng tôi</h2>
+       <p>Hãy đến với secret</p>
+    </section>
+</section>
+</section>
+        
+
+    
+
+<section id="feature" class="section-p1">
+    <div class="fe-box1">
+        <i class="fa-solid fa-calendar-days"></i> <br>
+        <div class="counter" data-target="365"></div>
+    </div>
+    <div class="fe-box1">
+        <i class="fa-solid fa-shop"></i><br>
+        <div class="counter" data-target="2"></div>
+        
+    </div>
+    <div class="fe-box1">
+        <i class="fa-solid fa-globe"></i><br>
+        <div class="counter" data-target="64"></div>
+     
+    </div>
+
+    <div class="fe-box1">
+        <i class="fa-solid fa-shirt"></i><br>
+        <div class="counter" data-target="3000"></div>
+       
+    </div>
+    <div class="fe-box1">
+        <i class="fa-solid fa-people-group"></i><br>
+        <div class="counter" data-target="1000"></div>
+   
+    </div>
+</section>
+<!-- abuout section starts  -->
+
+<section id="faq" class="faq">
+
+  <h1 class="heading">VỀ CHÚNG TÔI</h1>
+  
+  <div class="row">
+  
+  <div class="image">
+    <img src="assets/css/img/about/Ecommerce checkout laptop-bro.png" alt="">
+  </div>
+  
+  <div class="accordion-container">
+  
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>+</span>
+        <h3>Giới thiệu về Scrert.</h3>
+      </div>
+      <div class="accordion-body">
+        <p>Scrert mang ý nghĩa là sự bí ẩn, với slogan sự bí ẩn làm nên vẻ đẹp của người phụ nữ. Scrert được thành lập ra với sứ mệnh đem đến một làn gió mới với gu thời trang của các bạn gái trẻ. Làm cho những cô gái khi khoác lên mình những bộ cánh của levent, có thể trở nên xinh đẹp hơn bao giờ hết. </p>
+      </div>
+    </div>
+  
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>+</span>
+        <h3>Tại sao lại chọn Sceret?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>Là 1 trong những nhãn hiệu thời trang hiếm hoi theo đuổi phong cách nhẹ nhàng quyến rũ, giúp các cô gái có thể trở nên tỏa sáng hơn bao giờ hết. Scrert tự tin rằng có thể trở thành xu hướng, trở thành thương hiệu có chỗ đứng vững vàng trong lòng các bạn gái</p>
+      </div>
+    </div>
+  
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>+</span>
+        <h3>Nhiệm vụ của Scrert.</h3>
+      </div>
+      <div class="accordion-body">
+        <p>Với slogan Sự bí ẩn làm nên vẻ đẹp của người phụ nữ. Scrert đang nỗ lực hết mình, làm việc không biết mệt mỏi để có thể cho ra đời những bộ cánh xinh đẹp, nhẹ nhàng nhưng lại không kém phần quyến rũ. Làm cho những cô gái khi khoác lên mình những thiết kế của Scrert sẽ trở thành tâm điểm của mọi sự chú ý.</p>
+      </div>
+    </div>
+  
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>+</span>
+        <h3>Các thiết kế của Scrert được tạo ra như thế nào ?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>Scrert có đội ngũ thiết kế bao gồm các bạn trẻ tốt nghiệp chính quy ngành thiết kế thời trang theo đuổi phong cách đúng với slogan của thương hiệu. Sản phẩm trước khi đưa ra thị trường phải trải qua một quy trình nghiêm ngặt từ thiết kế cho đến chọn vật liệu phù hợp, sau đó dưới bàn tay của các người thợ may lành nghề sẽ cho ra một bộ cánh hoàn thiện để đưa đến tay khách hàng.</p>
+      </div>
+    </div>
+  
+    <div class="accordion">
+      <div class="accordion-header">
+        <span>+</span>
+        <h3>Có thể đặt mua các thiết kế của Scrert ở đâu ?</h3>
+      </div>
+      <div class="accordion-body">
+        <p>Khách hàng muốn đặt mua có thể tới trực tiếp tại cửa hàng Scrert tại địa chỉ 470 Trần Đại Nghĩa, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng hoặc đặt hàng online qua website chính thức của Scrert.</p>
+      </div>
+    </div>
+  
+  </div>
+  
+  </div>
+  
+  
+  <!-- </section>
+  <section id="team" class="team">
+
+    <h1 class="heading">our team</h1>
+    
+    <div class="row">
+    
+    <div class="card">
+      <div class="image">
+        <img src="assets/css/img/about/anh1.jpg" alt="">
+      </div>
+      <div class="info">
+        <h3>Hoàng Thị Diệu Hương</h3>
+      
+        <div class="icons">
+          <a href="https://www.facebook.com/hoangdieu.huong.581" class="fab fa-facebook-f"></a>
+          <a href="https://www.facebook.com/hoangdieu.huong.581" class="fab fa-twitter"></a>
+          <a href="https://www.facebook.com/hoangdieu.huong.581" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="image">
+        <img src="assets/css/img/about/anh3.jpg" alt="">
+      </div>
+      <div class="info">
+        <h3>Ngô Thị Anh Thư</h3>
+
+        <div class="icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="image">
+        <img src="assets/css/img/about/anh2.jpg" alt="">
+      </div>
+      <div class="info">
+        <h3>Lưu Nữ Hoàng Giang</h3>
+
+        <div class="icons">
+          <a href="https://www.facebook.com/hoangdieu.huong.581" class="fab fa-facebook-f"></a>
+          <a href="https://www.facebook.com/hoangdieu.huong.581" class="fab fa-twitter"></a>
+          <a href="https://www.facebook.com/hoangdieu.huong.581" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    
+    </section> -->
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="assets/css/img/rsz_11rsz_secret1-removebg-preview.png" alt="">
+            <h4>Liên lạc</h4>
+            <p><Strong>Địa chỉ: </Strong>247-Trần Đại Nghĩa-Ngũ Hành Sơn-Đà Nẵng</p>
+            <p><Strong>Địa thoại:</Strong>0363 568 734</p>
+            <p><Strong>Open:</Strong>08:00 - 21:00, Hàng ngày</p>
+            <div class="follow">
+                <h4>Shop</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <h4>Secret</h4>
+                <a href="">Đặc biệt</a>
+                <a href="">Đẹp-độc</a>
+                <a href="">Mua không nhìn giá</a>
+            </div>
+            <div class="col">
+                <h4>Tài khoản</h4>
+                <a href="">Đăng nhập</a>
+                <a href="">Giỏ hàng</a>
+                <a href="">Giúp đỡ</a>
+            </div>
+        <div class="col install">
+        <h4>Download App</h4>
+        <p>Từ Google Play hoặc App Store</p>
+        <div class="row">
+            <img src="assets/css/img/pay/app.jpg" alt="">
+            <img src="assets/css/img/pay/play.jpg" alt="">
+        </div>
+        <p>Thanh toán</p>
+        <img src="assets/css/img/pay/pay.png" alt="">
+    </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/about.js"></script>
+
+</body>
+</html>
